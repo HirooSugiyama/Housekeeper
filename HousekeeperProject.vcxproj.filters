@@ -1,0 +1,1363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>6b3a9f66-518f-472a-960b-454711d6ee5b</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>305cfd3f-bb57-4e1f-b131-e45df4d323fb</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dds;dlg;fbx;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{fc7fcf1f-222c-4d14-8424-868572e5eeda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\TitleScene">
+      <UniqueIdentifier>{82457628-7c47-4e1a-b66b-f7c31c8520d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{4815bf3b-80b6-4d50-b582-332fd26fac9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MyLibraries">
+      <UniqueIdentifier>{811c2a07-d587-445e-9410-603255c1846d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI">
+      <UniqueIdentifier>{525fbe0d-74b0-46f9-89f4-f20c5268e746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Tracker">
+      <UniqueIdentifier>{1e362aae-8b28-4ebe-82a7-b41717eea9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\StageSelectScene">
+      <UniqueIdentifier>{99b5c488-6d3a-48d3-9735-158361081ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\TimeOfDay">
+      <UniqueIdentifier>{2bf57dda-3d04-480e-88fd-03cfa55011fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Manager">
+      <UniqueIdentifier>{baac2345-d5c1-47d9-b06b-d894bdb196df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Money">
+      <UniqueIdentifier>{53349e57-7e87-46a3-a943-0c6fca45cf0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\MoneyTexture">
+      <UniqueIdentifier>{5ee44a49-c5e1-4cc9-b281-f4ebf090380f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{20bda224-49e4-4621-bbd2-d3720eb4e2a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Textures">
+      <UniqueIdentifier>{a7088ee9-fd00-4d18-b3f2-71b96f0dc9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Fonts">
+      <UniqueIdentifier>{eea3c579-7cc7-4e3d-b495-74ec5c148a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Icon">
+      <UniqueIdentifier>{e17ffd14-7217-4e09-89a0-685e2df92d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\PhaseCursorManager">
+      <UniqueIdentifier>{03c48f20-98cb-44dc-a5f4-8888cb4d1d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\PhaseCursorManager\PhaseCursor">
+      <UniqueIdentifier>{4d1ddf4c-4f79-481d-9ce8-a1ce664abe64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\RedAssert">
+      <UniqueIdentifier>{92305015-29ce-45b8-9eb3-422610b3ec9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\StageSelectScene\StageInfo">
+      <UniqueIdentifier>{e6a083ed-bdc6-438f-8c47-4df9e60f8287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\StageSelectScene\StageInfo\StageLevel">
+      <UniqueIdentifier>{96da7c6b-1196-4bdf-83a1-81f42d944594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\PlayerActionInfo">
+      <UniqueIdentifier>{bfb37f98-eb45-4f85-a622-4a2631b205fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\StageSelectScene\StageNumberTag">
+      <UniqueIdentifier>{7ee3a651-86be-4f6d-8da8-1c891640e1d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common">
+      <UniqueIdentifier>{1a87f4d4-2354-42aa-93fd-6ab976b9afdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common\Texture">
+      <UniqueIdentifier>{4bfe48b3-d85c-485e-9f71-9cea91374514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common\Cursor">
+      <UniqueIdentifier>{0da6db9a-31b4-44dc-aeeb-3e9bc5bdcb01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene">
+      <UniqueIdentifier>{c564c370-9b23-41a8-b9f1-6a880dcec7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon">
+      <UniqueIdentifier>{fe766cb5-1e64-467b-bd26-7d1e81ba4ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneShop">
+      <UniqueIdentifier>{1d704516-df02-42b4-87c6-327959d49431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneDefence">
+      <UniqueIdentifier>{780d45e3-9a5f-4135-a211-ee5cb2599f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneResult">
+      <UniqueIdentifier>{e2221fc0-f5d4-4317-9f36-8d5b92db1cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\Collider">
+      <UniqueIdentifier>{b2345b1a-b074-4b0d-babf-7eb4771320ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Administrator">
+      <UniqueIdentifier>{1fa61945-bda1-4fc2-a39f-1ff88df0c0c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Player">
+      <UniqueIdentifier>{c0b85938-8e0b-4442-9735-4215cf966b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Block">
+      <UniqueIdentifier>{fefa04e4-c615-4b7b-9b0e-286182ea70c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy">
+      <UniqueIdentifier>{b3e5cbd1-ddce-4b83-8401-b917fb32c0d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\GridLine">
+      <UniqueIdentifier>{2feeb226-b5b1-44cb-8930-cce3eba0cc9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\ObjectModel">
+      <UniqueIdentifier>{71918fc6-6cd6-4756-8540-759024d07ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Wall">
+      <UniqueIdentifier>{e2604188-665b-4a6e-a3bd-8195982bc676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Weapon">
+      <UniqueIdentifier>{f3cf35b3-5a3f-4871-a402-62bd169f4498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneRotationCamera">
+      <UniqueIdentifier>{5153564b-ed5b-410c-8bf0-2271a98d0238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Block\State">
+      <UniqueIdentifier>{722d86f9-1b8e-4d0c-9cec-fe6be3aadb0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Player\ActionState">
+      <UniqueIdentifier>{0b332201-459c-4640-8607-3e69bf7a524d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Player\ActionState\Animation">
+      <UniqueIdentifier>{1db61728-bbf8-4088-88cc-409a0fa8dc04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Player\MoveState">
+      <UniqueIdentifier>{8960c034-240d-461d-8517-2f7472e69c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\GroundObject">
+      <UniqueIdentifier>{00ed9e17-84a6-426d-b20d-9ec8de4d9d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\Effect">
+      <UniqueIdentifier>{9e2e521c-4dc3-42cd-9509-b809d61a71e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Bullet">
+      <UniqueIdentifier>{76349f78-cfa4-49a1-80e6-79908af46dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common\Blinking">
+      <UniqueIdentifier>{9a08204f-7fda-41bc-a938-00365e95ead4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneEndAnimation">
+      <UniqueIdentifier>{7b24c566-5536-4538-a844-42ff2b3336f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Player\ActionState\DefenseAction">
+      <UniqueIdentifier>{34815722-4599-4e58-a4a7-dfd8b7f3293c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common\Cloud">
+      <UniqueIdentifier>{24f1c3b4-a8c6-4825-9651-4a9de04a1765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneShop\WeaponExplanatory">
+      <UniqueIdentifier>{c9288dde-dabe-4485-9a96-2591bef358d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common\SpriteNumber">
+      <UniqueIdentifier>{dac12c1d-f657-4e6e-b076-ba4a5bb8afe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\ScoreRender">
+      <UniqueIdentifier>{59b160f5-feb5-4fc2-802c-7b90eb1a7593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\DefeatEnemyRender">
+      <UniqueIdentifier>{03e53a92-4a40-45f6-a00a-222c6913c244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D">
+      <UniqueIdentifier>{3f8157d6-a631-467e-9400-52ad98a6f98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MyLibraries\Camera">
+      <UniqueIdentifier>{7e251abd-e83b-419f-bae6-3dabfbd483b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MyLibraries\Shader">
+      <UniqueIdentifier>{eb2710db-e431-43d1-b732-e9e01f09a192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlayScenePhase">
+      <UniqueIdentifier>{3e3c2db9-4912-4f3c-91c9-4e35d3a3344e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MyLibraries\Resouce">
+      <UniqueIdentifier>{8a93582b-0743-4aea-b00b-900733943800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common\ConfirmationScreen">
+      <UniqueIdentifier>{7d3c89ba-0318-4ba6-a81d-415f52f383c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\UI\ControlPanel">
+      <UniqueIdentifier>{0ae2197d-da55-4981-9590-c3e3cfda42e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel">
+      <UniqueIdentifier>{d4a315b5-b18e-4ae3-8b93-3741fae49a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MyLibraries\Animation">
+      <UniqueIdentifier>{48d0a399-679d-4cf0-bd57-66b4cea5aece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\NormalEnemy">
+      <UniqueIdentifier>{cc041903-e5e9-45af-b7ec-16cc37d5358a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy">
+      <UniqueIdentifier>{a95722d8-f92f-45e1-8131-1b1c0c6a06f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy">
+      <UniqueIdentifier>{2228a6b0-4e77-4aac-981d-9b28194c48db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State">
+      <UniqueIdentifier>{4fd87485-cc5c-40dc-88f1-e04384b7b871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState">
+      <UniqueIdentifier>{c6993ae1-f8a1-4ebd-8f9b-172c1918aec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState">
+      <UniqueIdentifier>{f1c36613-1cb9-4ed5-9f55-6ee9bdf00bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState">
+      <UniqueIdentifier>{4d7896b7-caae-416b-9595-bcd05471c5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState">
+      <UniqueIdentifier>{dd761de9-c5c4-4d39-807c-6ad957980425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState">
+      <UniqueIdentifier>{4c52f65e-f9bf-4f18-a315-edaeb80de3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState">
+      <UniqueIdentifier>{0a99a67a-7ec5-4e45-a766-82a4d11f0e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState">
+      <UniqueIdentifier>{f949c959-6d46-41fe-bd41-c313bf1588be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState">
+      <UniqueIdentifier>{935c72eb-3ff7-447e-9819-554d4bf11e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component">
+      <UniqueIdentifier>{580e3453-aba1-4090-8538-3b8c3e26ba80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\CameraInfoComponent">
+      <UniqueIdentifier>{b5b25b4d-9e72-4793-9301-b8eee2799a53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\DirectXTKComponent">
+      <UniqueIdentifier>{0e54413e-fce9-4e4a-9b0f-11fc54da9161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\SceneComponent">
+      <UniqueIdentifier>{9e144465-8e79-44a7-8aab-f5ad3bf5bc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\ScreenTransitionComponent">
+      <UniqueIdentifier>{03b88944-c724-4633-80ea-f480178d8dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\TimerComponent">
+      <UniqueIdentifier>{2d1dcbba-110b-477c-ba70-d8d73531099b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\StageSelectScene\StageLevelSignBoard">
+      <UniqueIdentifier>{fa371ba6-35e1-4429-9c6e-602d9d70d26e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameMain.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\IScene.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TitleScene\TitleScene.h">
+      <Filter>Game\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Icon\Icon.h">
+      <Filter>Resources\Icon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Manager\ResourceManager.h">
+      <Filter>Game\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\UI.h">
+      <Filter>Game\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Tracker\KeyTracker.h">
+      <Filter>Game\Tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StageSelect\StageSelectScene.h">
+      <Filter>Game\StageSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\TimeOfDay.h">
+      <Filter>Game\UI\TimeOfDay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Money\Money.h">
+      <Filter>Game\Money</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\MoneyTexture.h">
+      <Filter>Game\UI\MoneyTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\PhaseCursor.h">
+      <Filter>Game\UI\PhaseCursorManager\PhaseCursor</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\PhaseCursorManager.h">
+      <Filter>Game\UI\PhaseCursorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\RedAssert.h">
+      <Filter>Game\UI\RedAssert</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StageSelect\StageInfomation.h">
+      <Filter>Game\StageSelectScene\StageInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StageSelect\StageNumer.h">
+      <Filter>Game\StageSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StageSelect\StageLevel.h">
+      <Filter>Game\StageSelectScene\StageInfo\StageLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\PlayerActionInfo.h">
+      <Filter>Game\UI\PlayerActionInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StageSelect\StageNumberTag.h">
+      <Filter>Game\StageSelectScene\StageNumberTag</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\ObjectSpriteTexture.h">
+      <Filter>Game\Common\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\ObjectTexture.h">
+      <Filter>Game\Common\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\CountNumber.h">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\MoveString.h">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\Administrator.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\CelestialSphere.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\Score.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\Timer.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\Block.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BlockManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCall.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLine.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GridLine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLineManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GridLine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLineType.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GridLine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\BoomerangState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBomb.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBoomerang.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponeType.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponHand.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponMachineGun.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponPistol.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponRocketLauncher.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Wall\Wall.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Wall\WallConstant.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Wall\WallManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\BoxModel.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\IModel.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectModel.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectSpriteModel.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\SphereModel.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Player.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Animation\NormalAttackAnim.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PlayScenePhase.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PlayScenePhaseBase.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseCountDown.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseDefense.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseResult.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseRotationCamera.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseWeaponShop.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\Collider\Collider.h">
+      <Filter>Game\PlayScene\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\ResultDrawString.h">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\ResultDrawStringConstant.h">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\ResultInfo.h">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneShop\RotWeaponSample.h">
+      <Filter>Game\PlayScene\PlaySceneShop</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneRotationCamera\RotationState.h">
+      <Filter>Game\PlayScene\PlaySceneRotationCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScene.h">
+      <Filter>Game\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\Utility.h">
+      <Filter>Game\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\DangerousLine.h">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\Gravity.h">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\PreparingBlock.h">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BKStateArchitecture.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BKStateNormal.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BlockKindBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateAttackEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateDefenseHouse.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PlayerActionState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PStateDamage.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PStateStand.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PStateWalk.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PlayerStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Ground.h">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Protecter.h">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectMove.h">
+      <Filter>Game\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConifer.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConiferGroup.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectShop.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\IGroundObject.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\Effect\Effect.h">
+      <Filter>Game\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\Effect\EffectManager.h">
+      <Filter>Game\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\Effect\EffectType.h">
+      <Filter>Game\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\Bullet.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletManager.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBoomerang.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateExplosion.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateNormalBullet.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletType.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\Cursor.h">
+      <Filter>Game\Common\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\Blinking.h">
+      <Filter>Game\Common\Blinking</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\DamageTimer.h">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseEndAnimation.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationBase.h">
+      <Filter>Game\PlayScene\PlaySceneEndAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationWin.h">
+      <Filter>Game\PlayScene\PlaySceneEndAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationLose.h">
+      <Filter>Game\PlayScene\PlaySceneEndAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationState.h">
+      <Filter>Game\PlayScene\PlaySceneEndAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Defense\DefenseActionBlockCreate.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState\DefenseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Defense\eDefenseActionState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState\DefenseAction</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\FlatPolygon.h">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\FlatPolygonBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Shadow.h">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\eSunState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\Adx2.h">
+      <Filter>Libraries\MyLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\CueSheet_0.h">
+      <Filter>Libraries\MyLibraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\Cloud.h">
+      <Filter>Game\Common\Cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\ITexture.h">
+      <Filter>Game\Common\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneShop\WeaponExplanatory.h">
+      <Filter>Game\PlayScene\PlaySceneShop\WeaponExplanatory</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\FloatNumber3D.h">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\SpriteNumber\FloatNumber2D.h">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\SpriteNumber\NumberBase.h">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\SpriteNumber\SpriteNumber2D.h">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\ScoreRender.h">
+      <Filter>Game\UI\ScoreRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\DefeatEnemyRender.h">
+      <Filter>Game\UI\DefeatEnemyRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\SpriteNumber\FadeNumber2D.h">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D.h">
+      <Filter>Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Tracker\GamePadTracker.h">
+      <Filter>Game\Tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\Camera.h">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\CameraBase.h">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\FixedPointCamera.h">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\MoveCamera.h">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\RotationCamera.h">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\Wipe.h">
+      <Filter>Libraries\MyLibraries\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\Fade.h">
+      <Filter>Libraries\MyLibraries\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\Pause.h">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\Resouce.h">
+      <Filter>Libraries\MyLibraries\Resouce</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\ConfirmationScreen.h">
+      <Filter>Game\Common\ConfirmationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\ControlPanel.h">
+      <Filter>Game\UI\ControlPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\UI\ControlPanelConstant.h">
+      <Filter>Game\UI\ControlPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel\AnimationModel.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\MyLibraries\Animation.h">
+      <Filter>Libraries\MyLibraries\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Master.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateCreateBefore.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateMove.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDamage.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDisappearance.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateRotation.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWalk.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWallAttack.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateAppearance.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateSinking.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateKnockBack.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBlinking.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\IEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\Enemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\NormalEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyType.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateMove.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateAttack.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateCreate.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateWalk.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateEscape.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainStateMove.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyState.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateStand.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateBase.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateStand.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateWalk.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectNormalEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectBossEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectSubordinateEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectEnemy.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCommonFunction.h">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\CameraInfoComponent\CameraInfoComponent.h">
+      <Filter>Game\Component\CameraInfoComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\DirectXTKComponent\DirectXTKComponent.h">
+      <Filter>Game\Component\DirectXTKComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\SceneComponent\PtoRSceneComponent.h">
+      <Filter>Game\Component\SceneComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\SceneComponent\StoPSceneComponent.h">
+      <Filter>Game\Component\SceneComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\ScreenTransitionComponent\ScreenTransitionComponent.h">
+      <Filter>Game\Component\ScreenTransitionComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\TimerComponent\TimerComponent.h">
+      <Filter>Game\Component\TimerComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StageSelect\StageLevelSignBoard.h">
+      <Filter>Game\StageSelectScene\StageLevelSignBoard</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMain.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TitleScene\TitleScene.cpp">
+      <Filter>Game\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Manager\ResourceManager.cpp">
+      <Filter>Game\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\UI.cpp">
+      <Filter>Game\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StageSelect\StageSelectScene.cpp">
+      <Filter>Game\StageSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\TimeOfDay.cpp">
+      <Filter>Game\UI\TimeOfDay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Money\Money.cpp">
+      <Filter>Game\Money</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\MoneyTexture.cpp">
+      <Filter>Game\UI\MoneyTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\PhaseCursor.cpp">
+      <Filter>Game\UI\PhaseCursorManager\PhaseCursor</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\PhaseCursorManager.cpp">
+      <Filter>Game\UI\PhaseCursorManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\RedAssert.cpp">
+      <Filter>Game\UI\RedAssert</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StageSelect\StageInfomation.cpp">
+      <Filter>Game\StageSelectScene\StageInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StageSelect\StageLevel.cpp">
+      <Filter>Game\StageSelectScene\StageInfo\StageLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\PlayerActionInfo.cpp">
+      <Filter>Game\UI\PlayerActionInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StageSelect\StageNumberTag.cpp">
+      <Filter>Game\StageSelectScene\StageNumberTag</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Tracker\KeyTracker.cpp">
+      <Filter>Game\Tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\ObjectSpriteTexture.cpp">
+      <Filter>Game\Common\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\ObjectTexture.cpp">
+      <Filter>Game\Common\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\CountNumber.cpp">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\MoveString.cpp">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Administrator\Administrator.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Administrator\CelestialSphere.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Administrator\Timer.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Administrator</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\Block.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\BlockManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCall.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLine.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\GridLine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLineManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\GridLine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBomb.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBoomerang.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponHand.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponMachineGun.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponPistol.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponRocketLauncher.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Wall\Wall.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Wall\WallConstant.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Wall\WallManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\BoxModel.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectModel.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectSpriteModel.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\SphereModel.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\Player.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\Animation\NormalAttackAnim.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseCountDown.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseDefense.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseResult.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseRotationCamera.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseWeaponShop.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\Collider\Collider.cpp">
+      <Filter>Game\PlayScene\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\ResultDrawStringConstant.cpp">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\ResultInfo.cpp">
+      <Filter>Game\PlayScene\PlaySceneResult</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneShop\RotWeaponSample.cpp">
+      <Filter>Game\PlayScene\PlaySceneShop</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\DangerousLine.cpp">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\Gravity.cpp">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\PreparingBlock.cpp">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\BKStateArchitecture.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateAttackEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateDefenseHouse.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\PStateDamage.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\PStateStand.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\PStateWalk.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\MoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Ground.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Protecter.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PlayScenePhaseBase.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConifer.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConiferGroup.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectShop.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\GroundObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\Effect\Effect.cpp">
+      <Filter>Game\PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\Effect\EffectManager.cpp">
+      <Filter>Game\PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\Bullet.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletManager.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBoomerang.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateExplosion.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateNormalBullet.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletType.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\Cursor.cpp">
+      <Filter>Game\Common\Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\Utility.cpp">
+      <Filter>Game\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\Blinking.cpp">
+      <Filter>Game\Common\Blinking</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\DamageTimer.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseEndAnimation.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationWin.cpp">
+      <Filter>Game\PlayScene\PlaySceneEndAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationLose.cpp">
+      <Filter>Game\PlayScene\PlaySceneEndAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\Defense\DefenseActionBlockCreate.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Player\ActionState\DefenseAction</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\FlatPolygon.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Shadow.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\Adx2.cpp">
+      <Filter>Libraries\MyLibraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\Cloud.cpp">
+      <Filter>Game\Common\Cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\ITexture.cpp">
+      <Filter>Game\Common\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneShop\WeaponExplanatory.cpp">
+      <Filter>Game\PlayScene\PlaySceneShop\WeaponExplanatory</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\FloatNumber3D.cpp">
+      <Filter>Game\PlayScene\PlaySceneDefence</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\SpriteNumber\FloatNumber2D.cpp">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\SpriteNumber\NumberBase.cpp">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\SpriteNumber\SpriteNumber2D.cpp">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\ScoreRender.cpp">
+      <Filter>Game\UI\ScoreRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\DefeatEnemyRender.cpp">
+      <Filter>Game\UI\DefeatEnemyRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\SpriteNumber\FadeNumber.cpp">
+      <Filter>Game\Common\SpriteNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D.cpp">
+      <Filter>Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Tracker\GamePadTracker.cpp">
+      <Filter>Game\Tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\Camera.cpp">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\CameraBase.cpp">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\FixedPointCamera.cpp">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\MoveCamera.cpp">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\RotationCamera.cpp">
+      <Filter>Libraries\MyLibraries\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\Wipe.cpp">
+      <Filter>Libraries\MyLibraries\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\Fade.cpp">
+      <Filter>Libraries\MyLibraries\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\BlockKindBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Block\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\Pause.cpp">
+      <Filter>Game\PlayScene\PlayScenePhase</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\Resouce.cpp">
+      <Filter>Libraries\MyLibraries\Resouce</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\ConfirmationScreen.cpp">
+      <Filter>Game\Common\ConfirmationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\ControlPanel.cpp">
+      <Filter>Game\UI\ControlPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\UI\ControlPanelConstant.cpp">
+      <Filter>Game\UI\ControlPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel\AnimationModel.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\MyLibraries\Animation.cpp">
+      <Filter>Libraries\MyLibraries\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateCreateBefore.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateMove.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDamage.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDisappearance.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateRotation.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWalk.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWallAttack.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateAppearance.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateSinking.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyCreateBeforeState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateKnockBack.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBlinking.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState\EnemyDamageState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\IEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\Enemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\NormalEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateAttack.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateMove.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateCraete.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateWalk.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateEscape.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainStateMove.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateStand.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState\BossEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateBase.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateStand.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateWalk.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainState\SubordinateEnemyMoveState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlayScene.cpp">
+      <Filter>Game\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectNormalEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectBossEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectSubordinateEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectEnemy.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCommonFunction.cpp">
+      <Filter>Game\PlayScene\PlaySceneCommon\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\CameraInfoComponent\CameraInfoComponent.cpp">
+      <Filter>Game\Component\CameraInfoComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\DirectXTKComponent\DirectXTKComponent.cpp">
+      <Filter>Game\Component\DirectXTKComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\SceneComponent\PtoRSceneComponent.cpp">
+      <Filter>Game\Component\SceneComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\SceneComponent\StoPSceneComponent.cpp">
+      <Filter>Game\Component\SceneComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\ScreenTransitionComponent\ScreenTransitionComponent.cpp">
+      <Filter>Game\Component\ScreenTransitionComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\TimerComponent\TimerComponent.cpp">
+      <Filter>Game\Component\TimerComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StageSelect\StageLevelSIgnBoard.cpp">
+      <Filter>Game\StageSelectScene\StageLevelSignBoard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+    <ResourceCompile Include="Resources\Icon\Icon.rc">
+      <Filter>Resources\Icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Resources\Textures\TridentLogo.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Resources\Icon\Icon.ico">
+      <Filter>Resources\Icon</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Assets</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fonts\myfile.spritefont">
+      <Filter>Resources\Fonts</Filter>
+    </None>
+    <None Include="Resources\Fonts\SegoeUI_18.spritefont">
+      <Filter>Resources\Fonts</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>GameAppTemplate</RootNamespace>
+    <ProjectGuid>{283fddd2-a661-4cdb-87ff-82dfd660df30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>HousekeeperProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ShaderGraphContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)Libraries\cri\include;$(ProjectDir)Libraries\DirectXTK\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries\cri\libs\x86;$(ProjectDir)Libraries\DirectXTK\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)Libraries\cri\include;$(ProjectDir)Libraries\DirectXTK\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Libraries\cri\libs\x86;$(ProjectDir)Libraries\DirectXTK\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>directXTK.lib;d3d11.lib;dxgi.lib;dxguid.lib;uuid.lib;kernel32.lib;user32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;DirectXTK.lib;DirectXTKAudioWin8.lib;cri_ware_pcx86_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>100000000</StackReserveSize>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+    <PostBuildEvent>
+      <Message>copy_dll.bat</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>directXTK.lib;d3d11.lib;dxgi.lib;dxguid.lib;uuid.lib;kernel32.lib;user32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;DirectXTKAudioWin8.lib;cri_ware_pcx86_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+    <PostBuildEvent>
+      <Message>copy_dll.bat</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceResources.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Game\Common\Blinking.h" />
+    <ClInclude Include="Game\Common\Cloud.h" />
+    <ClInclude Include="Game\Common\ConfirmationScreen.h" />
+    <ClInclude Include="Game\Common\Cursor.h" />
+    <ClInclude Include="Game\Common\ITexture.h" />
+    <ClInclude Include="Game\Common\ObjectSpriteTexture.h" />
+    <ClInclude Include="Game\Common\ObjectTexture.h" />
+    <ClInclude Include="Game\Common\SpriteNumber\FadeNumber2D.h" />
+    <ClInclude Include="Game\Common\SpriteNumber\FloatNumber2D.h" />
+    <ClInclude Include="Game\Common\SpriteNumber\NumberBase.h" />
+    <ClInclude Include="Game\Common\SpriteNumber\SpriteNumber2D.h" />
+    <ClInclude Include="Game\Component\CameraInfoComponent\CameraInfoComponent.h" />
+    <ClInclude Include="Game\Component\DirectXTKComponent\DirectXTKComponent.h" />
+    <ClInclude Include="Game\Component\SceneComponent\PtoRSceneComponent.h" />
+    <ClInclude Include="Game\Component\SceneComponent\StoPSceneComponent.h" />
+    <ClInclude Include="Game\Component\ScreenTransitionComponent\ScreenTransitionComponent.h" />
+    <ClInclude Include="Game\Component\TimerComponent\TimerComponent.h" />
+    <ClInclude Include="Game\GameMain.h" />
+    <ClInclude Include="Game\IScene.h" />
+    <ClInclude Include="Game\Manager\ResourceManager.h" />
+    <ClInclude Include="Game\Master.h" />
+    <ClInclude Include="Game\Money\Money.h" />
+    <ClInclude Include="Game\PlayScene\Collider\Collider.h" />
+    <ClInclude Include="Game\PlayScene\Effect\Effect.h" />
+    <ClInclude Include="Game\PlayScene\Effect\EffectManager.h" />
+    <ClInclude Include="Game\PlayScene\Effect\EffectType.h" />
+    <ClInclude Include="Game\PlayScene\PlayScene.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\Administrator.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\CelestialSphere.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\eSunState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\Score.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Administrator\Timer.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BKStateArchitecture.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BKStateNormal.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\Block.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BlockKindBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Block\BlockManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\Bullet.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBoomerang.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateExplosion.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateNormalBullet.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletType.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\DamageTimer.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectBossEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectNormalEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectSubordinateEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\Enemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCall.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCommonFunction.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyType.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\IEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateAttack.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateCreate.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateMove.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateEscape.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateStand.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateWalk.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateAppearance.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateSinking.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBlinking.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateKnockBack.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateCreateBefore.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDisappearance.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDamage.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateMove.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateRotation.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWalk.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWallAttack.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainStateMove.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateStand.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateWalk.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\FlatPolygon.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\FlatPolygonBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLine.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLineManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLineType.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Ground.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConifer.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConiferGroup.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectShop.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\GroundObject\IGroundObject.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel\AnimationModel.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\BoxModel.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\IModel.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectModel.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectSpriteModel.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectModel\SphereModel.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\ObjectMove.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateAttackEnemy.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateDefenseHouse.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Animation\NormalAttackAnim.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Defense\DefenseActionBlockCreate.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Defense\eDefenseActionState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\Player.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PlayerActionState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PlayerStateBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PStateDamage.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PStateStand.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Player\PStateWalk.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Protecter.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Shadow.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Wall\Wall.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Wall\WallConstant.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Wall\WallManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\BoomerangState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBomb.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBoomerang.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponeType.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponHand.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponMachineGun.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponManager.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponPistol.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponRocketLauncher.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\DangerousLine.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\FloatNumber3D.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\Gravity.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneDefence\PreparingBlock.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationBase.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationLose.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationWin.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PlayScenePhase.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PlayScenePhaseBase.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseCountDown.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseDefense.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseEndAnimation.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\Pause.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseResult.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseRotationCamera.h" />
+    <ClInclude Include="Game\PlayScene\PlayScenePhase\PScenePhaseWeaponShop.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\CountNumber.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\MoveString.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\ResultDrawString.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\ResultDrawStringConstant.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneResult\ResultInfo.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneRotationCamera\RotationState.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneShop\RotWeaponSample.h" />
+    <ClInclude Include="Game\PlayScene\PlaySceneShop\WeaponExplanatory.h" />
+    <ClInclude Include="Game\PlayScene\Utility.h" />
+    <ClInclude Include="Game\StageSelect\StageInfomation.h" />
+    <ClInclude Include="Game\StageSelect\StageLevel.h" />
+    <ClInclude Include="Game\StageSelect\StageLevelSignBoard.h" />
+    <ClInclude Include="Game\StageSelect\StageNumberTag.h" />
+    <ClInclude Include="Game\StageSelect\StageNumer.h" />
+    <ClInclude Include="Game\StageSelect\StageSelectScene.h" />
+    <ClInclude Include="Game\TitleScene\TitleScene.h" />
+    <ClInclude Include="Game\Tracker\GamePadTracker.h" />
+    <ClInclude Include="Game\Tracker\KeyTracker.h" />
+    <ClInclude Include="Game\UI\ControlPanel.h" />
+    <ClInclude Include="Game\UI\ControlPanelConstant.h" />
+    <ClInclude Include="Game\UI\DefeatEnemyRender.h" />
+    <ClInclude Include="Game\UI\MoneyTexture.h" />
+    <ClInclude Include="Game\UI\PhaseCursor.h" />
+    <ClInclude Include="Game\UI\PhaseCursorManager.h" />
+    <ClInclude Include="Game\UI\PlayerActionInfo.h" />
+    <ClInclude Include="Game\UI\RedAssert.h" />
+    <ClInclude Include="Game\UI\ScoreRender.h" />
+    <ClInclude Include="Game\UI\TimeOfDay.h" />
+    <ClInclude Include="Game\UI\UI.h" />
+    <ClInclude Include="Libraries\MyLibraries\Adx2.h" />
+    <ClInclude Include="Libraries\MyLibraries\Animation.h" />
+    <ClInclude Include="Libraries\MyLibraries\Camera.h" />
+    <ClInclude Include="Libraries\MyLibraries\CueSheet_0.h" />
+    <ClInclude Include="Libraries\MyLibraries\Fade.h" />
+    <ClInclude Include="Libraries\MyLibraries\FixedPointCamera.h" />
+    <ClInclude Include="Libraries\MyLibraries\CameraBase.h" />
+    <ClInclude Include="Libraries\MyLibraries\MoveCamera.h" />
+    <ClInclude Include="Libraries\MyLibraries\Resouce.h" />
+    <ClInclude Include="Libraries\MyLibraries\RotationCamera.h" />
+    <ClInclude Include="Libraries\MyLibraries\Wipe.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resources\Icon\Icon.h" />
+    <ClInclude Include="StepTimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeviceResources.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Game\Common\Blinking.cpp" />
+    <ClCompile Include="Game\Common\Cloud.cpp" />
+    <ClCompile Include="Game\Common\ConfirmationScreen.cpp" />
+    <ClCompile Include="Game\Common\Cursor.cpp" />
+    <ClCompile Include="Game\Common\ITexture.cpp" />
+    <ClCompile Include="Game\Common\ObjectSpriteTexture.cpp" />
+    <ClCompile Include="Game\Common\ObjectTexture.cpp" />
+    <ClCompile Include="Game\Common\SpriteNumber\FadeNumber.cpp" />
+    <ClCompile Include="Game\Common\SpriteNumber\FloatNumber2D.cpp" />
+    <ClCompile Include="Game\Common\SpriteNumber\NumberBase.cpp" />
+    <ClCompile Include="Game\Common\SpriteNumber\SpriteNumber2D.cpp" />
+    <ClCompile Include="Game\Component\CameraInfoComponent\CameraInfoComponent.cpp" />
+    <ClCompile Include="Game\Component\DirectXTKComponent\DirectXTKComponent.cpp" />
+    <ClCompile Include="Game\Component\SceneComponent\PtoRSceneComponent.cpp" />
+    <ClCompile Include="Game\Component\SceneComponent\StoPSceneComponent.cpp" />
+    <ClCompile Include="Game\Component\ScreenTransitionComponent\ScreenTransitionComponent.cpp" />
+    <ClCompile Include="Game\Component\TimerComponent\TimerComponent.cpp" />
+    <ClCompile Include="Game\GameMain.cpp" />
+    <ClCompile Include="Game\Manager\ResourceManager.cpp" />
+    <ClCompile Include="Game\Money\Money.cpp" />
+    <ClCompile Include="Game\PlayScene\Collider\Collider.cpp" />
+    <ClCompile Include="Game\PlayScene\Effect\Effect.cpp" />
+    <ClCompile Include="Game\PlayScene\Effect\EffectManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScene.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Administrator\Administrator.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Administrator\CelestialSphere.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Administrator\Timer.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\BKStateArchitecture.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\Block.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\BlockKindBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Block\BlockManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\Bullet.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateBoomerang.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateExplosion.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletStateNormalBullet.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Bullet\BulletType.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\DamageTimer.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\BossEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectBossEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectNormalEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\DetectSubordinateEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\Enemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCall.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyCommonFunction.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\EnemyManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\IEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateAttack.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateMove.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMainStateCraete.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateEscape.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateStand.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\BossEnemyMoveState\BossEnemyMoveStateWalk.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateAppearance.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyCreateBeforeState\EnemyCreateBeforeStateSinking.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateBlinking.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyDamageState\EnemyDamageStateKnockBack.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateCreateBefore.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDisappearance.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateDamage.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMainStateMove.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateRotation.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWalk.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\EnemyMoveState\EnemyMoveStateWallAttack.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMainStateMove.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateStand.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\State\SubordinateEnemyMoveState\SubordinateEnemyMoveStateWalk.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Enemy\SubordinateEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\FlatPolygon.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLine.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GridLine\GridLineManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Ground.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConifer.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectConiferGroup.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\GroundObject\GroundObjectShop.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\AnimationModel\AnimationModel.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\BoxModel.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectModel.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\ObjectSpriteModel.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\ObjectModel\SphereModel.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateAttackEnemy.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\ActionStateDefenseHouse.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\Animation\NormalAttackAnim.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\Defense\DefenseActionBlockCreate.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\Player.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\PStateDamage.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\PStateStand.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Player\PStateWalk.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Protecter.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Shadow.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Wall\Wall.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Wall\WallConstant.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Wall\WallManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBomb.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponBoomerang.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponHand.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponMachineGun.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponManager.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponPistol.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneCommon\Weapon\WeaponRocketLauncher.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\DangerousLine.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\FloatNumber3D.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\Gravity.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneDefence\PreparingBlock.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationLose.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneEndAnimation\EndAnimationWin.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PlayScenePhaseBase.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseCountDown.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseDefense.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseEndAnimation.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\Pause.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseResult.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseRotationCamera.cpp" />
+    <ClCompile Include="Game\PlayScene\PlayScenePhase\PScenePhaseWeaponShop.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\CountNumber.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\MoveSpriteNumber2D.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\MoveString.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\ResultDrawStringConstant.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneResult\ResultInfo.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneShop\RotWeaponSample.cpp" />
+    <ClCompile Include="Game\PlayScene\PlaySceneShop\WeaponExplanatory.cpp" />
+    <ClCompile Include="Game\PlayScene\Utility.cpp" />
+    <ClCompile Include="Game\StageSelect\StageInfomation.cpp" />
+    <ClCompile Include="Game\StageSelect\StageLevel.cpp" />
+    <ClCompile Include="Game\StageSelect\StageLevelSIgnBoard.cpp" />
+    <ClCompile Include="Game\StageSelect\StageNumberTag.cpp" />
+    <ClCompile Include="Game\StageSelect\StageSelectScene.cpp" />
+    <ClCompile Include="Game\TitleScene\TitleScene.cpp" />
+    <ClCompile Include="Game\Tracker\GamePadTracker.cpp" />
+    <ClCompile Include="Game\Tracker\KeyTracker.cpp" />
+    <ClCompile Include="Game\UI\ControlPanel.cpp" />
+    <ClCompile Include="Game\UI\ControlPanelConstant.cpp" />
+    <ClCompile Include="Game\UI\DefeatEnemyRender.cpp" />
+    <ClCompile Include="Game\UI\MoneyTexture.cpp" />
+    <ClCompile Include="Game\UI\PhaseCursor.cpp" />
+    <ClCompile Include="Game\UI\PhaseCursorManager.cpp" />
+    <ClCompile Include="Game\UI\PlayerActionInfo.cpp" />
+    <ClCompile Include="Game\UI\RedAssert.cpp" />
+    <ClCompile Include="Game\UI\ScoreRender.cpp" />
+    <ClCompile Include="Game\UI\TimeOfDay.cpp" />
+    <ClCompile Include="Game\UI\UI.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\Adx2.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\Animation.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\Camera.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\Fade.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\FixedPointCamera.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\CameraBase.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\MoveCamera.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\Resouce.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\RotationCamera.cpp" />
+    <ClCompile Include="Libraries\MyLibraries\Wipe.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+    <ResourceCompile Include="Resources\Icon\Icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico" />
+    <Image Include="Resources\Icon\Icon.ico" />
+    <Image Include="Resources\Textures\TridentLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Fonts\myfile.spritefont" />
+    <None Include="Resources\Fonts\SegoeUI_18.spritefont" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ShaderGraphContentTask.targets" />
+    <Import Project="packages\Microsoft.XAudio2.Redist.1.2.6\build\native\Microsoft.XAudio2.Redist.targets" Condition="Exists('packages\Microsoft.XAudio2.Redist.1.2.6\build\native\Microsoft.XAudio2.Redist.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.XAudio2.Redist.1.2.6\build\native\Microsoft.XAudio2.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.XAudio2.Redist.1.2.6\build\native\Microsoft.XAudio2.Redist.targets'))" />
+  </Target>
+</Project>
