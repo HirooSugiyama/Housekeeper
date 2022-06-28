@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+.vs
+Debug
+Release
+
+SaveData
+Resources
+Libraries/DirectXTK
+Libraries/cri
